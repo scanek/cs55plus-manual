@@ -107,7 +107,7 @@ onUnmounted(async () => {
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .garage-btn .text {
     display: none;
   }

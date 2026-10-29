@@ -47,14 +47,19 @@ export default defineConfig({
 
     nav: [
       { text: 'Главная', link: '/' },
+      {
+        text: 'Разделы руководства',
+        items: [
+          { text: '01. Общие сведения и регламент', link: '/01-general/' },
+          { text: '02. Двигатель 1.5T Blue Core', link: '/02-engine/' },
+          { text: '03. Трансмиссия 7DCT', link: '/03-transmission/' },
+          { text: '04. Шасси и ходовая часть', link: '/04-chassis/' },
+          { text: '05. Электрооборудование', link: '/05-electrical/' },
+          { text: '06. Кузов и интерьер', link: '/06-body/' },
+        ]
+      },
       { text: 'Калькулятор ТО', link: '/maintenance/' },
       { text: 'Моменты затяжки', link: '/torque/' },
-      { text: '01. Общие сведения', link: '/01-general/' },
-      { text: '02. Двигатель 1.5T', link: '/02-engine/' },
-      { text: '03. Трансмиссия 7DCT', link: '/03-transmission/' },
-      { text: '04. Шасси', link: '/04-chassis/' },
-      { text: '05. Электрика', link: '/05-electrical/' },
-      { text: '06. Кузов', link: '/06-body/' },
       { text: 'Коды DTC', link: '/07-dtc/' },
     ],
 
