@@ -1,0 +1,21 @@
+{
+  "name": "Changan CS55 Plus Руководство",
+  "short_name": "CS55+ Manual",
+  "description": "Интерактивное руководство по ремонту и обслуживанию Changan CS55 Plus",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "img/p18_1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/p18_1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

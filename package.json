@@ -23,5 +23,8 @@
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "medium-zoom": "^1.1.2"
   }
 }

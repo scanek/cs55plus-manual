@@ -10,8 +10,10 @@ export default defineConfig({
   
   head: [
     ['link', { rel: 'icon', href: '/img/p18_1.png' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#2563eb' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
   ],
 
   themeConfig: {
@@ -45,6 +47,8 @@ export default defineConfig({
 
     nav: [
       { text: 'Главная', link: '/' },
+      { text: 'Калькулятор ТО', link: '/maintenance/' },
+      { text: 'Моменты затяжки', link: '/torque/' },
       { text: '01. Общие сведения', link: '/01-general/' },
       { text: '02. Двигатель 1.5T', link: '/02-engine/' },
       { text: '03. Трансмиссия 7DCT', link: '/03-transmission/' },
@@ -94,9 +98,9 @@ export default defineConfig({
           items: [
             { text: 'Обзор 7-ступенчатой КПП (7DCT)', link: '/03-transmission/' },
             { text: 'Характеристики, моменты затяжки, масло', link: '/03-transmission/specifications' },
-            { text: 'Устройство и гидравлический контур', link: '/03-transmission/structure' },
-            { text: 'Электронный селектор передач', link: '/03-transmission/electronic-shift' },
-            { text: 'Снятие, установка и обслуживание', link: '/03-transmission/service' },
+            { text: 'Устройство и кинематическая схема', link: '/03-transmission/structure' },
+            { text: 'Электронный селектор передач (Shift-by-Wire)', link: '/03-transmission/electronic-shift' },
+            { text: 'Снятие, установка и замена масла', link: '/03-transmission/service' },
             { text: 'Коды неисправностей (DTC) трансмиссии', link: '/03-transmission/dtc' },
           ]
         }
@@ -111,7 +115,7 @@ export default defineConfig({
             { text: 'Углы установки колес (развал-схождение)', link: '/04-chassis/wheel-alignment' },
             { text: 'Рулевое управление и электроусилитель (EPS)', link: '/04-chassis/steering' },
             { text: 'Тормозная система, суппорты и диски', link: '/04-chassis/brakes' },
-            { text: 'Антиблокировочная система (ABS) и ESP', link: '/04-chassis/abs-esp' },
+            { text: 'Антиблокировочная система (ABS) и ESP 9.3', link: '/04-chassis/abs-esp' },
             { text: 'Стояночный тормоз (EPB) и контроль TPMS', link: '/04-chassis/epb-tpms' },
           ]
         }
@@ -123,7 +127,7 @@ export default defineConfig({
             { text: 'Обзор электрооборудования', link: '/05-electrical/' },
             { text: 'Вентиляция и кондиционирование (A/C)', link: '/05-electrical/climate' },
             { text: 'Стеклоочистители и стеклоподъемники', link: '/05-electrical/wipers-windows' },
-            { text: 'Система освещения (фары, фонари)', link: '/05-electrical/lighting' },
+            { text: 'Система освещения (Full-LED)', link: '/05-electrical/lighting' },
             { text: 'Центральный замок и сигнализация', link: '/05-electrical/door-locks' },
             { text: 'Бесключевой доступ (PEPS)', link: '/05-electrical/keyless' },
             { text: 'Круговой обзор 360° и парктроники', link: '/05-electrical/adas-camera' },
@@ -153,6 +157,22 @@ export default defineConfig({
             { text: 'Сводный справочник DTC', link: '/07-dtc/' },
             { text: 'Ошибки двигателя (ECU)', link: '/02-engine/dtc' },
             { text: 'Ошибки трансмиссии (TCU)', link: '/03-transmission/dtc' },
+          ]
+        }
+      ],
+      '/maintenance/': [
+        {
+          text: 'Калькулятор ТО',
+          items: [
+            { text: 'Регламент технического обслуживания', link: '/maintenance/' }
+          ]
+        }
+      ],
+      '/torque/': [
+        {
+          text: 'Моменты затяжки',
+          items: [
+            { text: 'Шпаргалка моментов затяжки', link: '/torque/' }
           ]
         }
       ]

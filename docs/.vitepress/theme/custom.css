@@ -1,0 +1,93 @@
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #60a5fa;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.14);
+}
+
+.dark {
+  --vp-c-bg: #0d1117;
+  --vp-c-bg-soft: #161b22;
+  --vp-c-bg-alt: #161b22;
+  --vp-c-border: #30363d;
+  --vp-c-divider: #30363d;
+}
+
+/* High contrast text in content */
+.vp-doc p, .vp-doc li {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Torque Badge Highlight */
+.torque-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgba(234, 88, 12, 0.15);
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.3);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.dark .torque-badge {
+  background-color: rgba(249, 115, 22, 0.2);
+  color: #fb923c;
+  border-color: rgba(249, 115, 22, 0.4);
+}
+
+/* Medium Zoom Customization */
+.medium-zoom-overlay {
+  background: rgba(0, 0, 0, 0.88) !important;
+  z-index: 1000 !important;
+}
+
+.medium-zoom-image--opened {
+  z-index: 1001 !important;
+  cursor: zoom-out !important;
+  border-radius: 8px;
+}
+
+/* Print CSS */
+@media print {
+  .VPNav, .VPSidebar, .VPDocFooter, .VPLocalNav, .no-print, .garage-bar {
+    display: none !important;
+  }
+  
+  .VPContent, .VPDoc, .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+  
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid #000000 !important;
+    padding: 6px !important;
+  }
+}
