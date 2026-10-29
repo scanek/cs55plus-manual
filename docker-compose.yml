@@ -1,0 +1,7 @@
+services:
+  cs55plus-manual:
+    build: .
+    container_name: cs55plus-manual
+    restart: unless-stopped
+    ports:
+      - "8088:80"

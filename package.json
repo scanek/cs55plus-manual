@@ -1,0 +1,27 @@
+{
+  "name": "cs55plus-manual",
+  "version": "1.0.0",
+  "description": "Руководство по ремонту и техническому обслуживанию Changan CS55 Plus",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scanek/cs55plus-manual.git"
+  },
+  "keywords": [
+    "changan",
+    "cs55plus",
+    "workshop-manual",
+    "repair-guide",
+    "dtc"
+  ],
+  "author": "scanek",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
