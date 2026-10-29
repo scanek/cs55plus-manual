@@ -77,7 +77,11 @@ export default defineConfig({
           text: '02. Двигатель 1.5T Blue Core',
           items: [
             { text: 'Обзор двигателя и характеристики', link: '/02-engine/' },
-            { text: 'Механическая часть и ГРМ', link: '/02-engine/mechanical' },
+            { text: 'Механическая часть: Спецификации и моменты', link: '/02-engine/mechanical-specs' },
+            { text: 'Механическая часть: Устройство и ГРМ', link: '/02-engine/mechanical-principles' },
+            { text: 'Механическая часть: Поиск неисправностей', link: '/02-engine/mechanical-diagnosis' },
+            { text: 'Механическая часть: Снятие и установка агрегатов', link: '/02-engine/mechanical-removal' },
+            { text: 'Механическая часть: Разборка и дефектовка ГБЦ', link: '/02-engine/mechanical-overhaul' },
             { text: 'Система смазки', link: '/02-engine/lubrication' },
             { text: 'Система охлаждения', link: '/02-engine/cooling' },
             { text: 'Топливная система прямого впрыска', link: '/02-engine/fuel' },
