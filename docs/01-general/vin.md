@@ -1,78 +1,70 @@
-# Идентификация (VIN, шильдики)
+# Идентификация автомобиля (VIN и шильдики)
 
-> **Страницы в оригинале:** 17 – 18 | **Модель:** Changan CS55 Plus (2-е поколение / Plus)
+> **Страницы в оригинале:** 17 – 18 | **Модель:** Changan CS55 Plus (Второе поколение)
 
-## Схемы и иллюстрации раздела
+## Расположение идентификационных маркировок
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0;">
   <a href="/img/p17_1.jpeg" target="_blank" style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 4px; display: inline-block; background: var(--vp-c-bg-soft);">
-    <img src="/img/p17_1.jpeg" alt="Иллюстрация" style="max-height: 180px; width: auto; object-fit: contain;" />
+    <img src="/img/p17_1.jpeg" alt="Расположение VIN номера под стеклом" style="max-height: 180px; width: auto; object-fit: contain;" />
   </a>
   <a href="/img/p17_2.jpeg" target="_blank" style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 4px; display: inline-block; background: var(--vp-c-bg-soft);">
-    <img src="/img/p17_2.jpeg" alt="Иллюстрация" style="max-height: 180px; width: auto; object-fit: contain;" />
+    <img src="/img/p17_2.jpeg" alt="VIN номер на кузове под сиденьем" style="max-height: 180px; width: auto; object-fit: contain;" />
   </a>
   <a href="/img/p18_1.png" target="_blank" style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 4px; display: inline-block; background: var(--vp-c-bg-soft);">
-    <img src="/img/p18_1.png" alt="Иллюстрация" style="max-height: 180px; width: auto; object-fit: contain;" />
+    <img src="/img/p18_1.png" alt="Заводская маркировочная табличка" style="max-height: 180px; width: auto; object-fit: contain;" />
   </a>
 </div>
 
-## Содержание и процедуры
+---
 
+## 1. Расположение идентификационного номера автомобиля (VIN)
 
-### Identification
+На автомобиле Changan CS55 Plus 17-значный идентификационный номер (VIN) нанесен в следующих местах:
 
-Vehicle Identification Number (VIN) 18
-Identification code
-Vehicle identification code(VIN)
+1. **Под ветровым стеклом (VIN в окошке):**
+   * Расположен в левом нижнем углу лобового стекла (со стороны водителя).
+   * Виден снаружи автомобиля через специальное прозрачное смотровое окно в шелкографии стекла.
 
-::: tip ПРИМЕЧАНИЕ
-Note: The picture is for position reference only. Please refer to the actual model.
-:::
+2. **Основной номер на кузове (выбит на полу салона):**
+   * Выбит на металлической поперечине пола кузова под сиденьем переднего пассажира.
+   * Для доступа сдвиньте пассажирское сиденье назад и откиньте пластиковую крышку смотрового лючка в ковровом покрытии.
 
-Serial number
+3. **Заводская информационная табличка (шильдик):**
+   * Закреплена на средней стойке кузова (B-pillar) с правой стороны в дверном проеме.
+   * Содержит: VIN-номер, модель автомобиля, модель двигателя, разрешенную максимальную массу, осевые нагрузки и дату выпуска.
 
-### Description
+---
 
-Serial number
+## 2. Структура и расшифровка VIN-номера (WMI, VDS, VIS)
 
-### Description
+Стандартный 17-значный VIN-код автомобиля Changan CS55 Plus:
 
-Body VIN printing
-position
-Sticking position of
-instrument panel VIN
-number
-Meaning of VIN code(17-digit letter + number combination)
-Serial number
+```
+Пример:  L S 6 A A 2 F 2 * N 1 0 0 0 0 1
+Позиция: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+```
 
-### Description
+| Позиции | Обозначение | Расшифровка для Changan CS55 Plus |
+| :--- | :--- | :--- |
+| **1 – 3** | **WMI (Всемирный индекс изготовителя)** | `LS6` — Changan Automobile Co., Ltd. (Китай) |
+| **4** | **Тип кузова и привод** | `A` — 5-дверный кроссовер (SUV), передний привод (2WD) |
+| **5** | **Серия модели** | `A` — CS55 Plus (Второе поколение) |
+| **6** | **Тип двигателя** | `2` — 1.5-литровый бензиновый турбомотор (Blue Core JL473ZQ7) |
+| **7** | **Тип трансмиссии** | `F` — 7-ступенчатая роботизированная КПП с двумя сцеплениями (7DCT) |
+| **8** | **Комплектация / системы безопасности** | `2` — Полный комплект подушек безопасности, ABS/ESP, системы ADAS |
+| **9** | **Контрольный символ** | Цифра от `0` до `9` или буква `X` (для проверки подлинности) |
+| **10** | **Модельный год** | `N` — 2022, `P` — 2023, `R` — 2024, `S` — 2025 |
+| **11** | **Сборочный завод** | `1` — Завод Changan Automobile в Чунцине |
+| **12 – 17** | **Серийный номер кузова** | Порядковый номер шасси на производственной линии |
 
-Serial number
+---
 
-### Description
+## 3. Номер двигателя и коробки передач
 
-1 -3
+### Номер двигателя (JL473ZQ7)
+* Выбит на специальной фрезерованной площадке блока цилиндров в задней части двигателя (со стороны стыка с коробкой передач, над стартером).
+* Формат маркировки: модель двигателя (`JL473ZQ7`) и шестизначный порядковый заводской номер мотора.
 
-### Manufacturer
-
-identification code
-Drive type
-Vehicle category code
-Check number
-Vehicle master
-parameter code
-Year code
-Engine type
-Manufacturer code
-Body type
-12 - 17
-Production No.
-
-### Identification
-
-Product label 19
-Product label
-
-::: tip ПРИМЕЧАНИЕ
-Note: The picture is for reference only. Please refer to the actual model.
-:::
+### Номер трансмиссии (7DCT)
+* Нанесен на шильдике и выбит на верхней плоскости картера коробки передач в зоне механизма переключения.
