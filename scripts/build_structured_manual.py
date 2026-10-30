@@ -360,7 +360,7 @@ def render_page_structured(pno):
             step_num = step_match.group(1)
             step_body = step_match.group(2).strip()
             trans_body = translate_batch([step_body])[0] if step_body else ""
-            fmt_body = format_torque_and_tools(trans_body)
+            fmt_body = format_torque_and_tools(trans_body).replace("\r\n", " ").replace("\n", " ")
 
             output_lines.append(f'\n<div class="step-card">')
             output_lines.append(f'  <div class="step-title"><span class="step-badge">ШАГ {step_num}</span> <span>{fmt_body}</span></div>')
